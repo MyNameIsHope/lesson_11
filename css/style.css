@@ -1,0 +1,120 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	/* padding: 50px; */
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background-color: cadetblue;
+	z-index: 100;
+}
+
+.header__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.menu {
+	font-size: 0;
+}
+
+.menu__item {
+	position: relative;
+	display: inline-block;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.menu__item:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.menu__link  {
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+	padding: 5px 0px;
+
+}
+
+
+.sub-menu {
+	background-color: cornflowerblue;
+	padding: 15px;
+	display: inline-block;
+	position: absolute;
+	min-width: 180px;
+	top: 130%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+
+.sub-menu__link {
+	font-size: 16px;
+	color: #fff;
+}
+
+.sub-menu__item:not(:last-child){
+	margin-bottom: 10px;
+}
+
+
+.posicion {
+	background: url('../img/bg.jpg') 0 / cover no-repeat;
+	height: 800px;
+	position: relative;
+}
+.posicion__car {
+	position: absolute;
+	right: 200px;
+	bottom: -89px;
+}
+
+.posicion__darth img{
+	width: 150px;
+	height: 150px;
+}
+
+.posicion__darth {
+	position: absolute;
+	left: 150px;
+	top: 225px;
+}
+
+.posicion__glass img {
+	width: 100px;
+	height: 50px;
+}
+.posicion__glass {
+	position: absolute;
+	left: 175px;
+	top: 275px;
+}
+
+
+.posicion__flag img {
+	width: 70px;
+	height: 50px;
+}
+
+.posicion__flag {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
